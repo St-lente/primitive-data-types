@@ -129,7 +129,7 @@ getFirstCharacter = "You need my first character"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-firstCharacter = getFirstCharacter.index(0);
+firstCharacter = getFirstCharacter[0];
 
 ########################################################################
 
