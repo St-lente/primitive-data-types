@@ -6,7 +6,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newBoolean = None
+newBoolean = False
 
 ########################################################################
 
@@ -27,7 +27,8 @@ scoreToPass = 75
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-studentPasses = None
+studentPasses = (examScore2 >= scoreToPass) or (examScore1 >= scoreToPass)
+
 
 ########################################################################
 
@@ -58,10 +59,10 @@ student2Chuck = random.randint(4, 6)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-numberOfWood = None
-numberOfChuck = None
+numberOfWood = tongueTwiser.count("wood ") + tongueTwiser.count("wood? ") + tongueTwiser.count("wood, ") + tongueTwiser.count("wood.")
+numberOfChuck = tongueTwiser.count(" chuck")
 
-bothAtLeastOneCorrect = None
+bothAtLeastOneCorrect = (student1Chuck == numberOfChuck or student1Wood == numberOfWood) and (student2Chuck == numberOfChuck or student2Wood == numberOfWood)
 
 ########################################################################
 
@@ -77,8 +78,8 @@ bothAtLeastOneCorrect = None
 #  the bool() conversion function, which will look at the non-boolean
 #  data types and return their inherent boolean value
 #
-falsy1 = falsy2 = falsy3 = None
-truthy1 = truthy2 = None
+falsy1 = falsy2 = falsy3 = False
+truthy1 = truthy2 = True
 # Uncomment the lines below to see what they evaluate to
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
